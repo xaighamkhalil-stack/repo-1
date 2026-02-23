@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRESTA Coffee | Sip The Luxury</title>
+    <meta
+      name="description"
+      content="CRESTA Coffee delivers a luxury coffee experience with premium beans, artisan brewing, and elegant ambiance."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">☕</span>
+        <span class="brand-name">CRESTA</span>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-outline" href="#reserve">Reserve</a>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="tagline">Sip The Luxury</p>
+          <h1>Luxury Coffee Crafted for Every Moment</h1>
+          <p>
+            Welcome to CRESTA — where rich aroma, premium ingredients, and refined
+            service create an unforgettable coffee ritual.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#menu">Explore Menu</a>
+            <a class="btn btn-outline" href="#contact">Find Us</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <div class="swatch swatch-dark">#151515</div>
+          <div class="swatch swatch-gold">#D6A651</div>
+        </div>
+      </section>
+
+      <section id="about" class="section two-col">
+        <div>
+          <h2>About CRESTA</h2>
+          <p>
+            CRESTA blends modern café elegance with timeless coffee artistry. From
+            espresso classics to signature luxury infusions, every cup is brewed to
+            perfection in a warm, premium setting.
+          </p>
+        </div>
+        <article class="feature-box">
+          <h3>Signature Promise</h3>
+          <ul>
+            <li>Single-origin premium beans</li>
+            <li>Handcrafted espresso and pour-over bar</li>
+            <li>Curated ambiance and attentive table service</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="menu" class="section">
+        <h2>Essentials Menu</h2>
+        <div class="menu-grid">
+          <article>
+            <h3>Espresso Bar</h3>
+            <p>Espresso, Americano, Cappuccino, Latte, Flat White</p>
+          </article>
+          <article>
+            <h3>Signature Luxury</h3>
+            <p>Gold Mocha, Velvet Vanilla, Dark Roast Royale, Caramel Crest</p>
+          </article>
+          <article>
+            <h3>Cold Collection</h3>
+            <p>Iced Latte, Cold Brew, Iced Americano, Creamy Nitro</p>
+          </article>
+          <article>
+            <h3>Bakery Pairing</h3>
+            <p>Butter Croissant, Chocolate Danish, Almond Biscotti, Tiramisu Slice</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <h2>The CRESTA Experience</h2>
+        <div class="experience-grid">
+          <article>
+            <h3>Elegant Interiors</h3>
+            <p>Dark tones and gold highlights inspired by your brand palette.</p>
+          </article>
+          <article>
+            <h3>Barista Mastery</h3>
+            <p>Precision-crafted drinks served with elevated presentation.</p>
+          </article>
+          <article>
+            <h3>Private Tastings</h3>
+            <p>Reserve curated coffee flights for groups and special occasions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="reserve" class="section reserve">
+        <h2>Reserve Your Table</h2>
+        <form class="reserve-form">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Date
+            <input type="date" name="date" required />
+          </label>
+          <label>
+            Guests
+            <input type="number" name="guests" min="1" max="12" required />
+          </label>
+          <button class="btn btn-gold" type="submit">Book Now</button>
+        </form>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2>Visit CRESTA</h2>
+        <p>123 Luxe Avenue, Downtown District</p>
+        <p>Open Daily: 7:00 AM - 11:00 PM</p>
+        <p>hello@crestacoffee.com | +1 (555) 019-1515</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> CRESTA Coffee. Sip The Luxury.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
