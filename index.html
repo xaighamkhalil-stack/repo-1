@@ -24,7 +24,15 @@
       </div>
       <nav>
         <a href="#about">About</a>
-        <a href="#menu">Menu</a>
+        <div class="nav-item has-dropdown">
+          <a href="#menu">Menu</a>
+          <div class="dropdown" role="menu" aria-label="Coffee categories">
+            <a href="#espresso">Espresso Bar</a>
+            <a href="#signature">Signature Luxury</a>
+            <a href="#cold">Cold Collection</a>
+            <a href="#bakery">Bakery Pairing</a>
+          </div>
+        </div>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -73,19 +81,19 @@
       <section id="menu" class="section">
         <h2>Essentials Menu</h2>
         <div class="menu-grid">
-          <article>
+          <article id="espresso">
             <h3>Espresso Bar</h3>
             <p>Espresso, Americano, Cappuccino, Latte, Flat White</p>
           </article>
-          <article>
+          <article id="signature">
             <h3>Signature Luxury</h3>
             <p>Gold Mocha, Velvet Vanilla, Dark Roast Royale, Caramel Crest</p>
           </article>
-          <article>
+          <article id="cold">
             <h3>Cold Collection</h3>
             <p>Iced Latte, Cold Brew, Iced Americano, Creamy Nitro</p>
           </article>
-          <article>
+          <article id="bakery">
             <h3>Bakery Pairing</h3>
             <p>Butter Croissant, Chocolate Danish, Almond Biscotti, Tiramisu Slice</p>
           </article>

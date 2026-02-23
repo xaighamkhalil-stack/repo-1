@@ -52,6 +52,7 @@ body {
 nav {
   display: flex;
   gap: 1.1rem;
+  align-items: center;
 }
 
 nav a {
@@ -61,6 +62,57 @@ nav a {
 
 nav a:hover {
   color: var(--gold);
+}
+
+.nav-item {
+  position: relative;
+}
+
+.has-dropdown > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.has-dropdown > a::after {
+  content: "▾";
+  font-size: 0.8rem;
+  color: var(--gold);
+  transform: translateY(-1px);
+}
+
+.dropdown {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.65rem);
+  min-width: 200px;
+  background: rgba(18, 18, 18, 0.98);
+  border: 1px solid rgba(214, 166, 81, 0.45);
+  border-radius: 0.75rem;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transform: translateY(-16px) scaleY(0.15);
+  transform-origin: top;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 220ms ease, opacity 220ms ease;
+}
+
+.dropdown a {
+  display: block;
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid rgba(214, 166, 81, 0.12);
+}
+
+.dropdown a:last-child {
+  border-bottom: 0;
+}
+
+.has-dropdown:hover .dropdown,
+.has-dropdown:focus-within .dropdown {
+  transform: translateY(0) scaleY(1);
+  opacity: 1;
+  pointer-events: auto;
 }
 
 main {
