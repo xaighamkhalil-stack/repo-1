@@ -218,6 +218,7 @@ h1 {
 .menu-grid article,
 .experience-grid article,
 .reserve,
+.payment,
 .contact {
   background: rgba(30, 30, 30, 0.85);
   border: 1px solid rgba(214, 166, 81, 0.22);
@@ -231,10 +232,24 @@ h1 {
 }
 
 .menu-grid,
-.experience-grid {
+.experience-grid,
+.payment-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 1rem;
+}
+
+
+.payment > p {
+  color: var(--muted);
+  margin-top: -0.35rem;
+}
+
+.payment-grid article {
+  background: rgba(14, 14, 14, 0.88);
+  border: 1px solid rgba(214, 166, 81, 0.2);
+  border-radius: 0.8rem;
+  padding: 1rem;
 }
 
 .reserve-form {
